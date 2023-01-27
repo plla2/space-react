@@ -27,7 +27,7 @@ function Menu({ isMenuShow, hideMobileMenu }) {
       <div className={classes["burger-close"]} onClick={hideMobileMenu}>
         <img src={closeMobileMenu} alt="close mobile menu icon" />
       </div>
-      {links.map((link, index) => {
+      {links.map((link, index) => (
         <li className={classes["menu_link"]} key={index}>
           <NavLink
             className={({ isActive }) =>
@@ -40,8 +40,9 @@ function Menu({ isMenuShow, hideMobileMenu }) {
             <span>0{index}</span>
             {link.name}
           </NavLink>
-        </li>;
-      })}
+        </li>
+      ))}
+      ;
     </ul>
   );
 }

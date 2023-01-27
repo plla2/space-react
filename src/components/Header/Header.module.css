@@ -1,0 +1,41 @@
+.header {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header__logo {
+  height: 40px;
+  padding: 24px;
+  width: 40px;
+}
+
+.burger {
+  height: 2.1rem;
+  margin: 33px 25px;
+  width: 2.4rem;
+}
+
+@media screen and (min-width: 800px) {
+  .burger {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header__logo {
+    margin: 30px 0 0 40px;
+  }
+
+  .header__line {
+    background-color: var(--white-color);
+    height: 0.5px;
+    left: 15%;
+    opacity: 0.3;
+    position: absolute;
+    top: 64%;
+    width: 40%;
+    z-index: 1;
+  }
+}

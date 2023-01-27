@@ -1,0 +1,144 @@
+.technology-page {
+  background-image: url(../../assets/technology/background-technology-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.technology-page__content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.technology-page__heading {
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  letter-spacing: 0.3rem;
+  margin: 1rem 0 3rem;
+  text-transform: uppercase;
+}
+
+.technology-page__heading span {
+  font-weight: bold;
+  margin-right: 1rem;
+  opacity: 0.5;
+}
+
+.technology-page__image-container {
+  height: 17rem;
+  margin-bottom: 3.5rem;
+  width: 100%;
+}
+
+.technology-page__image {
+  height: 100%;
+  width: 100%;
+}
+
+.technology-page__btn-container {
+  align-items: flex-start;
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+}
+
+.technology-page__btn {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-family: "Bellefair", serif;
+  font-size: 1.6rem;
+  height: 40px;
+  letter-spacing: 1px;
+  margin-right: 2rem;
+  width: 40px;
+}
+
+.technology-page__btn--active {
+  background: white;
+  color: darkslategrey;
+}
+
+.technology-page__btn:hover {
+  border-color: rgba(255, 255, 255, 1);
+}
+
+.technology-page__terminology {
+  color: white;
+  flex-basis: 100%;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.24rem;
+  margin: 3rem 0 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.technology-page__name {
+  color: white;
+  font-size: 2.4rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.technology-page__description {
+  color: lightslategray;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin: 2rem 0 6rem;
+  padding: 0 4rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  .technology-page {
+    background-image: url(../../assets/technology/background-technology-tablet.jpg);
+  }
+
+  .technology-page__heading {
+    font-size: 2rem;
+    letter-spacing: 0.34rem;
+    margin: 4rem 0 6rem 3rem;
+    width: 100%;
+  }
+
+  .technology-page__image-container {
+    height: 31rem;
+  }
+
+  .technology-page__btn-container {
+    margin: 2.5rem 0 2rem;
+  }
+
+  .technology-page__btn {
+    font-size: 2.4rem;
+    height: 6rem;
+    letter-spacing: 1.5px;
+    width: 6rem;
+  }
+
+  .technology-page__terminology {
+    font-size: 1.6rem;
+    letter-spacing: 0.3rem;
+  }
+
+  .technology-page__name {
+    font-size: 4rem;
+  }
+
+  .technology-page__description {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    margin: 2rem 0 0;
+    padding: 0 19rem;
+  }
+}

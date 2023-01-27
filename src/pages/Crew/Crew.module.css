@@ -1,0 +1,172 @@
+.crew-page {
+  background-image: url(../../assets/crew/background-crew-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.crew-page__content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.crew-page__heading {
+  color: white;
+  flex-basis: 100%;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  letter-spacing: 0.27rem;
+  margin: 1rem 0 3.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.crew-page__heading span {
+  font-weight: bold;
+  margin-right: 1rem;
+  opacity: 0.3;
+}
+
+.crew-page__image-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 24rem;
+  justify-content: center;
+  margin-bottom: 3.5rem;
+  width: 32rem;
+}
+
+.crew-page__image-container::after {
+  background-color: white;
+  content: "";
+  display: block;
+  height: 0.1rem;
+  opacity: 0.5;
+  width: 32rem;
+}
+
+.crew-page__image {
+  width: 55%;
+}
+
+.crew-page__btn-container {
+  align-items: flex-start;
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.crew-page__btn {
+  background-color: rgba(255, 255, 255, 0.17);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 10px;
+  margin-right: 1.5rem;
+  width: 10px;
+}
+
+.crew-page__btn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.crew-page__btn--active {
+  background-color: white;
+}
+
+.crew-page__content {
+  flex-basis: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.crew-page__role {
+  color: white;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  opacity: 0.3;
+}
+
+.crew-page__name {
+  color: white;
+  font-size: 2.4rem;
+  font-weight: normal;
+}
+
+.crew-page__bio {
+  color: white;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin: 1.5rem 0 5rem;
+  padding: 0 3.5rem;
+  text-transform: none;
+}
+
+@media screen and (min-width: 800px) {
+  .crew-page {
+    background-image: url(../../assets/crew/background-crew-tablet.jpg);
+  }
+
+  .crew-page__content-container {
+    display: grid;
+    grid-template-areas:
+      "head"
+      "content"
+      "buttons"
+      "image";
+    justify-items: center;
+  }
+
+  .crew-page__heading {
+    font-size: 2rem;
+    grid-area: head;
+    letter-spacing: 0.35rem;
+    margin: 4rem 0 6rem 6rem;
+    text-align: left;
+    width: 100%;
+  }
+
+  .crew-page__image-container {
+    grid-area: image;
+    height: 56rem;
+    width: 45rem;
+  }
+
+  .crew-page__image-container::after {
+    display: none;
+  }
+
+  .crew-page__image {
+    width: 100%;
+  }
+
+  .crew-page__btn-container {
+    grid-area: buttons;
+    margin-bottom: 14rem;
+  }
+
+  .crew-page__content {
+    grid-area: content;
+  }
+
+  .crew-page__role {
+    font-size: 2.4rem;
+  }
+
+  .crew-page__name {
+    font-size: 4rem;
+  }
+
+  .crew-page__bio {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    padding: 0 18rem;
+  }
+}
