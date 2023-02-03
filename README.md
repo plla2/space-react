@@ -24,10 +24,9 @@ react + react-router-dom 우주웹사이트
 </ul>
 
 ### Install
-```npm install```
-
-### Usage
-```npm start```
+```npx create-react-app .```</br>
+```npm start```</br>
+```npm install react-router-dom --save```</br>
 
 
 ## 🖥️ 실행화면
